@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring rest Operation</title>
+</head>
+<body>
+    <script>
+        const Susan = {
+            firstName: "Susan",
+            lastName: "Steward",
+            age: 14,
+            hobbies: {
+                hobby1: "singing",
+                hobby2: "dancing"
+            }
+        };
+
+const {lastName, ...rest} = Susan;
+console.log(lastName, rest);
+    </script>
+</body>
+</html>

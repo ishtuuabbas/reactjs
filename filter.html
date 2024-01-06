@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let competitors = ["Anna", "Beth", "Cara", "David"]
+
+function displayWinners(name, index, array) {
+    let isNextItem = index + 1 < array.length ? true : false
+    if (isNextItem) {
+    	console.log(`The No${index+1} winner is ${name}.`);
+    } else {
+    	console.log(`Sorry, ${name} is not one of the winners.`)
+    }
+}
+
+competitors.filter((name, index, array) => displayWinners(name, index, array))
+
+
+    </script>
+</body>
+</html>

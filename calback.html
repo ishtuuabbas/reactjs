@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let foundDogs = [{
+        breed: "Beagle",
+        color: "white"
+      },
+    
+      {
+        breed: "Chihuahua",
+        color: "yellow"
+      },
+    
+      {
+        breed: "Pug",
+        color: "black"
+      },
+      
+      {
+        breed: "Chihuahua",
+        color: "yellow"
+      }
+    ]
+    
+    
+    function findMyDog(dog, index) {
+        if (dog.breed === "Chihuahua") console.log(index);
+      return dog.breed === "Chihuahua"
+    }
+    
+    
+    let myDog = foundDogs.find((dog, index) => findMyDog(dog, index));
+    
+    
+    console.log(myDog);
+    </script>
+</body>
+</html>

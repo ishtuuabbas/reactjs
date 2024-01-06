@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReservedPosition </title>
+</head>
+<body>
+    <script>
+        let reservedPositions = [{
+    name: "Ali",
+    age: 20
+  },
+
+  {
+    name: "Benish",
+    age: 25
+  },
+
+  {
+    name: "Sabika",
+    age: 15
+  },
+  
+  {
+    name: "Dilawar",
+    age: 35
+  },
+  
+  {
+    name: "Eshrat",
+    age: 18
+  }
+]
+
+
+function findByIndex(person, index) {
+  return index === 2
+}
+
+
+let myPosition = reservedPositions.find((person, index) => findByIndex(person, index));
+console.log(myPosition);
+    </script>
+</body>
+</html>
